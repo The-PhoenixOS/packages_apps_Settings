@@ -17,6 +17,7 @@
     <string name="device_info_protected_single_press">Tap to show info</string>
 
     <!-- About phone screen, Project Flare version -->
+    <string name="about_device_name">Device</string>
     <string name="flare_version">Flare version</string>
     <string name="flare_version_default">Unknown</string>
     <string name="keywords_flare_version">Project Flare version, flare version</string>
