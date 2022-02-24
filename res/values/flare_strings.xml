@@ -184,4 +184,8 @@
     <string name="gesture_navbar_radius_title">Pill radius</string>
     <string name="thin_label">Thin</string>
     <string name="thick_label">Thick</string>
+
+    <!-- Compact layout -->
+    <string name="navbar_compact_layout_title">Compact layout</string>
+    <string name="navbar_compact_layout_summary">Use a compact layout in the navigation bar</string>
 </resources>
