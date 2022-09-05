@@ -153,4 +153,9 @@
     <string name="custom_timeout_summary_5mins">5 minutes</string>
     <string name="custom_timeout_summary_10mins">10 minutes</string>
     <string name="custom_timeout_summary_30mins">30 minutes</string>
+
+    <!-- Per-app volume control -->
+    <string name="app_volume">App volume</string>
+    <string name="app_volume_title">Per-app volume control</string>
+    <string name="app_volume_summary">Allow to set different volume levels for each app</string>
 </resources>
