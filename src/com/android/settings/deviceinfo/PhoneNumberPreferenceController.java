@@ -94,29 +94,6 @@ public class PhoneNumberPreferenceController extends BasePreferenceController {
         return mTapped;
     }
 
-    @Override
-    public boolean handlePreferenceTreeClick(Preference preference) {
-        final int simSlotNumber = mPreferenceList.indexOf(preference);
-        if (simSlotNumber == -1) {
-            return false;
-        }
-        mTapped = true;
-        final Preference simStatusPreference = mPreferenceList.get(simSlotNumber);
-        simStatusPreference.setSummary(getPhoneNumber(simSlotNumber));
-        return true;
-    }
-
-    private CharSequence getFirstPhoneNumber() {
-        final List<SubscriptionInfo> subscriptionInfoList =
-                mSubscriptionManager.getActiveSubscriptionInfoList();
-        if (subscriptionInfoList == null || subscriptionInfoList.isEmpty()) {
-            return mContext.getText(R.string.device_info_default);
-        }
-
-        // For now, We only return first result for slice view.
-        return getFormattedPhoneNumber(subscriptionInfoList.get(0));
-    }
-
     private CharSequence getPhoneNumber(int simSlot) {
         final SubscriptionInfo subscriptionInfo = getSubscriptionInfo(simSlot);
         if (subscriptionInfo == null) {
