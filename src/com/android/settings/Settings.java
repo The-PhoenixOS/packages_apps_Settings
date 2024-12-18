@@ -515,4 +515,7 @@ public class Settings extends SettingsActivity {
 
     public static class HearingDevicesActivity extends SettingsActivity { /* empty */ }
     public static class HearingDevicesPairingActivity extends SettingsActivity { /* empty */ }
+
+    // FlareZone Additions.
+    public static class FlareZoneSettingsActivity extends SettingsActivity {}
 }
